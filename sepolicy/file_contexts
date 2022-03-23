@@ -1,0 +1,11 @@
+####################################
+# sysfs files
+#
+
+# Power supply
+/sys/devices/13870000.i2c/i2c-5/5-0049/sm5703-charger/power_supply(/.*)   u:object_r:sysfs_power_supply:s0
+/sys/devices/13830000.i2c/i2c-9/9-0071/power_supply(/.*)                  u:object_r:sysfs_power_supply:s0
+
+# Input
+/sys/devices/virtual/sec/sec_epen(/.*)?                                   u:object_r:sysfs_input:s0
+/sys/devices/13840000.i2c/i2c-8/8-0049/input/input1(/.*)?                 u:object_r:sysfs_input:s0
