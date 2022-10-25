@@ -37,9 +37,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Properties
--include $(LOCAL_PATH)/system_prop.mk
-
 # Inherit from gtaxl-common
 $(call inherit-product, device/samsung/gtaxl-common/common.mk)
 
