@@ -21,7 +21,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
+    init.gps.rc
 
 # IDC
 PRODUCT_COPY_FILES += \
