@@ -23,7 +23,7 @@ LOCAL_PATH := device/samsung/gtanotexlwifi
 TARGET_KERNEL_CONFIG := lineage-gtanotexlwifi_defconfig
 
 # OTA assertions
-TARGET_OTA_ASSERT_DEVICE := gtanotexlwifi,gtanotexllte
+TARGET_OTA_ASSERT_DEVICE := gtanotexlwifi
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 3045064704
