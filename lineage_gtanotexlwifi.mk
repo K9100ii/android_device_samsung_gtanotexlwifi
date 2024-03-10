@@ -25,17 +25,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
-## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_gtanotexlwifi
+# Device identifiers. These must come after all inclusions.
 PRODUCT_DEVICE := gtanotexlwifi
 PRODUCT_MODEL := SM-P580
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
+PRODUCT_NAME := lineage_gtanotexlwifi
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="gtanotexlwifi" \
-    PRIVATE_BUILD_DESC="gtanotexlwifizs-user 8.1.0 M1AJQ P580ZSS1CTI1 release-keys"
+    PRIVATE_BUILD_DESC="gtanotexlwifizs-user 8.1.0 M1AJQ P580ZSS1CTI1 release-keys" \
+    PRODUCT_NAME="gtanotexlwifi"
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+# Set the build fingerprint
 BUILD_FINGERPRINT := google/ryu/dragon:8.1.0/OPM1.171019.016/4503492:user/release-keys
